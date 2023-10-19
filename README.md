@@ -25,3 +25,10 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+
+### My Process
+
+This was an excellent project to refresh & revamp my knowledge of TypeScript & Angular. I made frequent & descriptive commits along the way, and added comments to describe and define Angular code or other things I was less familiar with.
+
+I didn't run into many problems, as this stepped me through the process quite well, but I did run into some formatting issues in the CSS that required some minor alterations from the orginal code. (For example, in the 'My Heroes' list of clickable buttons, the .badge class, which displayed the hero ids, sat very off center in the original code).
