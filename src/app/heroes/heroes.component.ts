@@ -2,6 +2,9 @@ import { Component } from '@angular/core';
 import { Hero } from '../hero'
 import { HEROES } from '../mock-heroes';
 
+// Parent component of HeroDetailComponent. 
+// This component sends the user selected hero for display to the Hero Details component.
+
 @Component({
   selector: 'app-heroes',
   templateUrl: './heroes.component.html',
