@@ -10,12 +10,6 @@
   </li>
 </ul>
 
-<!-- if the the hero in the list is selected, show the details for selected hero -->
-<div *ngIf="selectedHero">
-    <h2>{{selectedHero.name | uppercase}} Details</h2>
-    <div>id: {{selectedHero.id}}</div>
-    <div>
-        <label for="hero-name">Hero name: </label>
-        <input id="hero-name" [(ngModel)]="selectedHero.name" placeholder="name">
-    </div>
-</div>
+<!-- add the <app-hero-detail> selector element to display the hero detail view.
+  Add the [hero]="variableName" Angular property binding syntax [one-way] to tell the element what to display -->
+<app-hero-detail [hero]="selectedHero"></app-hero-detail>
