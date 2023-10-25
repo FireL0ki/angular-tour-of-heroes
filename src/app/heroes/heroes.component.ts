@@ -20,9 +20,11 @@ export class HeroesComponent {
     this.selectedHero = hero;
   }
 
-  // method to retrieve heroes from the service
+  // an RxJS (Reactive Extensions for JavaScript) method; calls the getHeroes function from the heroService module. 
+  // The subscribe() function listens to the observable and passes the emitted data to the callback function (heroes => this.heroes = heroes)
+  // The arrow function takes the parameter heroes, and when the observable emits data 'heroes' (the heroes list), assigns the data 'heroes' to the this.heroes class.
   getHeroes(): void {
-    this.heroes = this.heroService.getHeroes();
+    this.heroService.getHeroes().subscribe(heroes => this.heroes = heroes)
   }
 
   // Angular initialization function, runs on init.
