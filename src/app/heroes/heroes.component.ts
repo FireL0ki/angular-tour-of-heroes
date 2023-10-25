@@ -28,7 +28,7 @@ export class HeroesComponent implements OnInit {
 
   onSelect(hero: Hero): void {
     this.selectedHero = hero;
-    this.messageService.add('HeroesComponent: Selected hero id=${hero.id}');
+    this.messageService.add(`HeroesComponent: Selected hero id=${hero.id}`);
   }
 
   // an RxJS (Reactive Extensions for JavaScript) method; calls the getHeroes function from the heroService module. 
