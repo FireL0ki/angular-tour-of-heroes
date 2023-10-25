@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { Hero } from '../hero'
-import { HEROES } from '../mock-heroes';
+import { HeroService } from '../hero.service';
 
 // Parent component of HeroDetailComponent. 
 // This component sends the user selected hero for display to the Hero Details component.
