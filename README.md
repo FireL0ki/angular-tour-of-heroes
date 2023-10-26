@@ -31,6 +31,6 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 This was an excellent project to refresh & revamp my knowledge of TypeScript & Angular. I made frequent & descriptive commits along the way, and added comments to describe and define Angular code or other things I was less familiar with.
 
-I made a new branch when working with a new section of the tutorial, and set up a new Pull Request & merged once I had reviewed it, befor emoving on.
+I made a new branch when working with a new section of the tutorial, and set up a new Pull Request & merged once I had reviewed it, before moving on.
 
 I didn't run into many problems, as this stepped me through the process quite well, but I did run into some formatting issues in the CSS that required some minor alterations from the orginal code. (For example, in the 'My Heroes' list of clickable buttons, the .badge class, which displayed the hero ids, sat very off center in the original code).
