@@ -1,15 +1,8 @@
 <h2>My Heroes</h2>
 <ul class="heroes">
   <li *ngFor="let hero of heroes">
-    <!-- (click)="onSelect(element)" in this case, the element is hero. 
-    The parentheses around (click) make Angular listen for the click event, and executes the onSelect() expression. -->
-    <button [class.selected]="hero === selectedHero" type="button" (click)="onSelect(hero)">
-      <span class="badge">{{hero.id}}</span>
-      <span class="name">{{hero.name}}</span>
-    </button>
+    <a routerLink="/detail/{{hero.id}}">
+      <span class="badge">{{hero.id}}</span> {{hero.name}}
+    </a>
   </li>
 </ul>
-
-<!-- add the <app-hero-detail> selector element to display the hero detail view.
-  Add the [hero]="variableName" Angular property binding syntax [one-way] to tell the element what to display -->
-<app-hero-detail [hero]="selectedHero"></app-hero-detail>
